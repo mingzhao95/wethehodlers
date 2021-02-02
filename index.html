@@ -17,11 +17,10 @@
   <div>
     <nav class="navbar" id="top">
       <div class="inner">
-        <text>If You Believe Free People Deserve A Free Market...&emsp;&emsp;</text>
-        <a href="#sign-up-form"><b>Sign Up</b></a>
+        <a href="#sign-up-form"><b>Join the Waitlist</b></a>
       </div>
     </nav>
-    <img style="padding:50px 0px 0px 0px" src="images/manifesto.jpg" class="responsive" />
+    <img style="padding:0px 0px 0px 0px" src="images/manifesto.jpg" class="responsive" />
   </div>
 
   <!-- Sign-Up Form -->
@@ -29,53 +28,42 @@
 
     <form name="sign-up" method="post" action="https://formspree.io/f/xbjpbglq">
       <br><br>
-      <label id="origin">( ͡° ͜ʖ ͡°) Hey there, beautiful! How'd ya find us?</label>
-      &emsp;&emsp;<select name="origin" id="origin" style="width:300px">
-        <option value="none" selected disabled hidden> 
-        <option value="r/wallstreetbets">r/wallstreetbets</option>
-        <option value="facebook">facebook</option>
-        <option value="twitter">twitter</option>
-        <option value="word-of-mouth">heard through the grapevine</option>
-        <option value="other">other</option>
-      </select><br><br>
+      <label id="ascii" class="origin">&emsp;( ͡° ͜ʖ ͡°)&emsp;</label><br>
 
-      <label id="first-name" class="user-info-label">First name</label>
-      <input type="text" id="first-name" name="first-name" placeholder="Bobbie" required><br>
+      <input type="text" id="name" name="first-name" placeholder="name" required><br>
+      <input type="text" id="email" name="email" placeholder="email" required><br>
+      <input type="text" id="phone" name="phone" placeholder="phone" required><br>
 
-      <label id="last-name" class="user-info-label">Last name</label>
-      <input type="text" id="last-name" name="last-name" placeholder="Gekko" required><br>
+      <br><br>
 
-      <label id="email" class="user-info-label">Email</label>
-      <input type="text" id="email" name="email" placeholder="buyGekkosomeSTONKS@gmail.com" required><br><br><br>
-
-      <label id="asset-classes">What goodies ya plan to trade?</label>
-      <fieldset>  
-        <input type="checkbox" name="asset-classes" value="stonks">stonks<br> 
-        <input type="checkbox" name="asset-classes" value="meme-stonks">meme stonks (without limits!)<br>  
-        <input type="checkbox" name="asset-classes" value="options">options<br>  
-        <input type="checkbox" name="asset-classes" value="futures">futures<br>  
-        <input type="checkbox" name="asset-classes" value="crypto">crypto<br> 
-        <input type="checkbox" name="asset-classes" value="crypto-options">crypto options<br> 
-        <input type="checkbox" name="asset-classes" value="crypto-futures">crypto futures (the future is nigh!)<br> 
-        <input type="checkbox" name="asset-classes" value="etfs">ETFs<br> 
-        <input type="checkbox" name="asset-classes" value="pokemons">Pokemons!!!<br> 
+      <label id="ascii" class="asset-classes"> ┌( ಠ_ಠ)┘ </label><br>
+      <fieldset> 
+        <label id="asset-classes">What do you want to trade?</label> <br><br>
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="asset-classes" value="stonks">stonks<br> 
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="asset-classes" value="meme-stonks">meme stonks (lift the limits!)<br>  
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="asset-classes" value="options">options<br>  
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="asset-classes" value="futures">futures<br>  
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="asset-classes" value="crypto">crypto<br> 
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="asset-classes" value="crypto-options">crypto options<br> 
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="asset-classes" value="crypto-futures">crypto futures (the future is nigh!)<br> 
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="asset-classes" value="etfs">ETFs<br> 
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="asset-classes" value="pokemons">Pokemons!!!<br> 
       </fieldset><br><br>
 
-      <label id="features-wishlist"> ┌( ಠ_ಠ)┘ If ya found a Genie, what would ya wish for?</label>
+      <label id="ascii" class="features-wishlist"> ᕦ(ò_óˇ)ᕤ </label><br>
       <fieldset>  
-        <input type="checkbox" name="features"          value="news-aggregation">#NewsAgg:         All my news and reddit/twitter/forums/youtubers in ONE place!<br>  
-        <input type="checkbox" name="features" value="expanded-access-to-assets">#EqualAccess:     Same access as them fancy hedge funds!<br> &emsp;&emsp;(e.g. I wanna trade at the IPOs!)<br>
-        <input type="checkbox" name="features"       value="no-limits-guarantee">#NoRestrictions:  No unfair trade restrictions! They said I can't get more than 5 $GME?!?! #MarketManipulation<br>
-        <input type="checkbox" name="features" value="custom-etf-index-creation">#DemocratizeETFs: To make my own custom thematic ETFs/indexes, and let friends trade them too!<br>
-        <input type="checkbox" name="features"                    value="social">#SocialInvesting: To discuss stonks & strategies w/ friends, then easily trade on the same platform!<br> 
-        <input type="checkbox" name="features"                  value="low-code">#LowCodeAlgos:    I've built up some damn good patterns in my head but don't got the time/skills to code! Genie, can you code 'em up for me?<br>
-        <input type="checkbox" name="features"                 value="education">#Education:       I wanna get more edumacated about stonks and Bitcoin and short squeezes and credit cycles... <br>
-        <input type="checkbox" name="features"     value="custom">
+        <label>If ya found a Genie, what would ya wish for?</label><br><br>
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="features"          value="news-aggregation">#NewsAgg:         All my news and reddit/twitter/forums/youtubers in ONE place!<br>  
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="features" value="expanded-access-to-assets">#EqualAccess:     Same access as them fancy hedge funds!<br> &emsp;&emsp;(e.g. I wanna trade at the IPOs!)<br>
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="features"       value="no-limits-guarantee">#NoRestrictions:  No unfair trade restrictions! They said I can't get more than 5 $GME?!?! #MarketManipulation<br>
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="features" value="custom-etf-index-creation">#DemocratizeETFs: To make my own custom thematic ETFs/indexes, and let friends trade them too!<br>
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="features"                    value="social">#SocialInvesting: To discuss stonks & strategies w/ friends, then easily trade on the same platform!<br> 
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="features"                  value="low-code">#LowCodeAlgos:    I've built up some damn good patterns in my head but don't got the time/skills to code! Genie, can you code 'em up for me?<br>
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="features"                 value="education">#Education:       I wanna get more edumacated about stonks and Bitcoin and short squeezes and credit cycles... <br>
+        &emsp;&emsp;<input type="checkbox" id="multchoice" name="features"     value="custom">
         <textarea name="features" id="custom-feature-request" placeholder="Actually what I really want is... " style="height:40px; width:95%"></textarea><br> 
       </fieldset><br><br>
 
-      <label id="subject" style="width:100px">Any parting messages, fellow #HODLer? </label><br>
-      <textarea id="comment" name="comment" placeholder="Go ahead, Siri's not listening ..." style="height:100px; width:96.5%"></textarea><br>
 
       <input type="submit">
 
@@ -93,9 +81,8 @@
   <!-- Sign-Up NavBar  &  Manifesto Background -->
   <div>
     <nav class="footer" id="bottom">
-        <text><b>OUR BETA APP RELEASE IS WEEKS AWAY!!!! </b></text>
-        <p id="countdown"><script>showCountDown("countdown","March 9, 2021 00:00:00")</script></p>
-        <text><b>Can't wait?? Connect with us sooner! </b></text>
+        <p id="countdown"><script>showCountDown("countdown","Feb 22, 2021 00:00:00")</script></p>
+        <text><b>Want more stonk memes & meme stonks?</b></text><br>
         &emsp; <a href="https://twitter.com/BobbieGekko"><img src="images/twitter-icon.jpg" width="20px" height="20px"></a>
         &emsp; <a href="https://www.youtube.com/channel/UC1iCBIlG-H6yhDvKdPYuG1g"><img src="images/youtube-icon.jpg" width="20px" height="20px"></a>
         &emsp; <a href="tel:203-535-2052"><img src="images/text-icon.jpg" width="20px" height="20px"></a>

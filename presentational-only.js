@@ -27,6 +27,20 @@ $(document).ready(function()
 });
 
 
+// <!-- Limit Multiple Choice to 3 -->
+
+$(document).ready(function () {
+   $("input[name=features]").change(function () {
+      var maxAllowed = 3;
+      var cnt = $("input[name=features]:checked").length;
+      if (cnt > maxAllowed) 
+      {
+         $(this).prop("checked", "");
+         alert('Select maximum ' + maxAllowed + ' Levels!');
+     }
+  });
+});
+
 // <!-- Display the countdown timer in an element -->
 
 
@@ -53,8 +67,8 @@ function showCountDown(elemId, dateStr) {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    document.getElementById(elemId).innerHTML = "⏰ &emsp;" + days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+    document.getElementById(elemId).innerHTML = "🚀 Beta Release in &emsp;" + days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s " + "&emsp; 🚀";
 
     // If the count down is over, write some text 
     if (distance < 0) {

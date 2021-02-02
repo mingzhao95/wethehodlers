@@ -50,7 +50,7 @@ h2 {
 }
 
 a {
-  color: #ffffff;
+  color: #0f0f0f;
 }
 
 p {
@@ -64,13 +64,15 @@ strong {
 .container {
   border-radius: 0px;
   padding: 20px;
-  width: 45%;
+  width: 50%;
   display: inline-grid;
+  justify-content: center;
+  margin-left: 25%;
 }
 
 .footer {
   width: 100%;
-  background-color: rgba(0.6, 0, 0, 0.6);
+  background-color: rgba(0.6, 0, 0, 0.9);
   height: 100px;
   position: fixed;
   left: 0;
@@ -97,10 +99,10 @@ strong {
 
 .navbar a {
   display: inline-block;
-  border: 1px solid #fff;
+  background-color: #ffffff;
   font-size: 18px;
   line-height: 24px;
-  border-radius: 3px;
+  border-radius: 15px;
   padding: 2px 15px;
   text-decoration: none;
   margin-top: 8px;
@@ -113,7 +115,7 @@ strong {
   padding: 2px 15px;
   text-decoration: none;
   margin-top: 8px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .content {
@@ -132,7 +134,7 @@ strong {
 
 .button {
   display: inline-block;
-  padding: 6px 10px;
+  padding: 6px 15px;
   color: #cafaea;
   border: 1px solid #cafaea;
   border-radius: 3px;
@@ -143,8 +145,23 @@ strong {
   text-transform: uppercase;
 }
 
+#ascii {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 2px 15px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+#multchoice {
+  color: #ffffff;
+  font-size: 10px;
+}
+
 #more-content {
-  display: none;
+  display: none;ƒ
 }
 
 
@@ -156,7 +173,7 @@ input[type=text] {
   width: 300px;
   padding: 12px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
+  border-radius: 15px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 6px; /* Bottom margin */
@@ -167,6 +184,8 @@ input[type=text] {
 input[type=checkbox] {
   margin-top: 8px; /* Add a top margin */
   margin-bottom: 8px; /* Bottom margin */
+  font-size: 12px;
+  color: white;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -183,20 +202,33 @@ select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #80c883;
+  background-color: #000000;
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 25px;
   cursor: pointer;
-  font-size:30px;
+  font-size:20px;
+  text-align: center;
 
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #4d5d53; /* dark sage green background */
+  background-color: #80c883; /* bright green background */
   font-size:40px;
+}
+
+
+fieldset {
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 15px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 6px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically (not horizontally) resize the textarea */
+  display: inline-block;
 }
 
 /* Add a background color and some padding around the form */
