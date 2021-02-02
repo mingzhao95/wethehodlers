@@ -1,5 +1,4 @@
 <?php
-
 	$errors = '';
 	$myemail = 'mz2377@columbia.edu';//<-----Put Your email address here.
 	if(empty($_POST['fname'])  || 
@@ -42,11 +41,20 @@
 
 		$headers .= "Reply-To: $email";
 
-		mail($to,$email_subject,$email_body,$headers);
+		@mail($to,$email_subject,$email_body,$headers);
 
 		//redirect to the 'thank you' page
 
 		header('Location: contact-form-thank-you.html');
+
+		} else {
+
+			$to = $myemail;
+			$email_subject = "errors!!";
+			$email_body = "error: $errors";
+			$headers = "From: $myemail\n";
+
+			@mail($to,$email_subject,$email_body,$headers);
 
 		}
 
