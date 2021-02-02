@@ -1,150 +1,104 @@
+
+<!-- Tutorial URL: http://sixrevisions.com/css/responsive-background-image/ -->
+
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a responsive product landing page.">
-    <title>Landing Page &ndash; Layout Examples &ndash; Pure</title>
-    <link rel="stylesheet" href="/css/pure/pure-min.css">
-    <link rel="stylesheet" href="/css/pure/grids-responsive-min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="/layouts/marketing/styles.css">
+<meta charset="utf-8">
+<title>WeTheHODLers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="presentational-only.js"></script>
 </head>
 <body>
 
-<div class="header">
-    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">Your Site</a>
+  <!-- Sign-Up NavBar  &  Manifesto Background -->
+  <div>
+    <nav class="navbar" id="top">
+      <div class="inner">
+        <text>If You Believe Free People Deserve A Free Market...&emsp;&emsp;</text>
+        <a href="#sign-up-form"><b>Sign Up</b></a>
+      </div>
+    </nav>
+    <img style="padding:50px 0px 0px 0px" src="images/manifesto.jpg" class="responsive" />
+  </div>
 
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li>
-        </ul>
-    </div>
-</div>
+  <!-- Sign-Up Form -->
+  <div id="sign-up-form" class="container">
+    <form action="./form-handler.php" method="post">
+      <br><br>
+      <label id="origin" name="origin" >( ͡° ͜ʖ ͡°) ey there, beautiful! How'd ya find us?</label>&emsp;&emsp;<select id="origin" style="width:300px">
+        <option value="none" selected disabled hidden> 
+        <option value="wsb">r/wallstreetbets</option>
+        <option value="facebook">facebook</option>
+        <option value="twitter">twitter</option>
+        <option value="wordofmouth">heard through the grapevine</option>
+        <option valye="other">other</option>
+      </select><br><br>
 
-<div class="splash-container">
-    <div class="splash">
-        <h1 class="splash-head">Big Bold Text</h1>
-        <p class="splash-subhead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-        <p>
-            <a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a>
-        </p>
-    </div>
-</div>
+      <label id="fname" class="user-info-label">First name</label>
+      <input type="text" id="fname" name="fname" placeholder="Gordon" required><br>
 
-<div class="content-wrapper">
-    <div class="content">
-        <h2 class="content-head is-center">Excepteur sint occaecat cupidatat.</h2>
+      <label id="lname" class="user-info-label">Last name</label>
+      <input type="text" id="lname" name="lname" placeholder="Gekko" required><br>
 
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+      <label id="email" class="user-info-label">Email</label>
+      <input type="text" id="email" name="email" placeholder="buyGekkosomeSTONKS@gmail.com" required><br><br><br>
 
-                <h3 class="content-subhead">
-                    <i class="fa fa-rocket"></i>
-                    Get Started Quickly
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-mobile"></i>
-                    Responsive Layouts
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-th-large"></i>
-                    Modular
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-check-square-o"></i>
-                    Plays Nice
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
-            </div>
-        </div>
-    </div>
+      <label id="assets">What goodies ya plan to trade?</label>
+      <fieldset>  
+        <input type="checkbox" name="assets" value="stonks">stonks<br> 
+        <input type="checkbox" name="assets" value="meme-stonks">meme stonks (without limits!)<br>  
+        <input type="checkbox" name="assets" value="options">options<br>  
+        <input type="checkbox" name="assets" value="futures">futures<br>  
+        <input type="checkbox" name="assets" value="crypto">crypto<br> 
+        <input type="checkbox" name="assets" value="crypto-options">crypto options!<br> 
+        <input type="checkbox" name="assets" value="etfs">ETFs<br> 
+        <input type="checkbox" name="assets" value="pokemons">Pokemons!!<br> 
+      </fieldset><br><br>
 
-    <div class="ribbon l-box-lrg pure-g">
-        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-            <img width="300" alt="File Icons" class="pure-img-responsive" src="/img/common/file-icons.png">
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+      <label id="features-wishlist"> ┌( ಠ_ಠ)┘ if ya found a Genie, what would ya wish for?</label>
+      <fieldset>  
+        <input type="checkbox" name="features"     value="news-agg">#NewsAgg:         All my news and reddit/twitter/forums/youtubers in ONE place!<br>  
+        <input type="checkbox" name="features"       value="access">#EqualAccess:     Same access as them fancy hedge funds!<br> &emsp;&emsp;(e.g. I wanna trade at the IPOs!)<br>
+        <input type="checkbox" name="features"    value="no-limits">#NoRestrictions:  No unfair trade restrictions! They said I can't get more than 5 $GME?!?! #MarketManipulation<br>
+        <input type="checkbox" name="features" value="custom-index">#DemocratizeETFs: To make my own thematic ETFs and indexes, and let friends trade them too!<br>
+        <input type="checkbox" name="features" value="custom-index">#SocialInvesting: To discuss stonks & strategies w/ friends, then easily trade on the same platform!<br> 
+        <input type="checkbox" name="features"     value="low-code">#LowCodeAlgos:    I've built up some damn good patterns in my head! Genie, can you code them up for me?<br>
+        <input type="checkbox" name="features"     value="custom">
+        <textarea name="features" id="custom-feature-request" placeholder="Actually what I really want is... " style="height:40px; width:95%"></textarea><br> 
+      </fieldset><br><br>
 
-            <h2 class="content-head content-head-ribbon">Laboris nisi ut aliquip.</h2>
+      <label id="subject" style="width:100px">Any parting messages, fellow #HODLer? </label><br>
+      <textarea id="comment" name="comment" placeholder="Go ahead, Siri's not listening ..." style="height:100px; width:96.5%"></textarea><br>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor.
-            </p>
-        </div>
-    </div>
+      <input type="submit" value="Submit">
 
-    <div class="content">
-        <h2 class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
+    </form>
+  <br><br>
+  </div>
 
-        <div class="pure-g">
-            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                <form class="pure-form pure-form-stacked">
-                    <fieldset>
-
-                        <label for="name">Your Name</label>
-                        <input id="name" type="text" placeholder="Your Name">
+  <!-- Memes  &  Funnies -->
+  <div class=container>
+    <p></p>
+    <img width="100%" src="https://github.com/memetic-institute/Money-printer-go-BRRR/raw/master/public/print-graph.gif">
+  </div>
 
 
-                        <label for="email">Your Email</label>
-                        <input id="email" type="email" placeholder="Your Email">
+  <!-- Sign-Up NavBar  &  Manifesto Background -->
+  <div>
+    <nav class="footer" id="bottom">
+        <text><b>OUR BETA APP RELEASE IS WEEKS AWAY!!!! </b></text>
+        <p id="countdown"><script>showCountDown("countdown","March 9, 2021 00:00:00")</script></p>
+        <text><b>Can't wait?? Connect with us sooner! </b></text>
+        &emsp; <a href="https://twitter.com/mz_b1tb0t"><img src="images/twitter-icon.jpg" width="20px" height="20px"></a>
+        &emsp; <a href="tel:203-535-2052"><img src="images/text-icon.jpg" width="20px" height="20px"></a>
+        &emsp; <a href="mailto:initiates@wethehodlers.com?Subject=Hello!"><img src="images/email-icon.jpg" width="20px" height="20px"></a>
+      </div>
+    </nav>
+  </div>
 
-                        <label for="password">Your Password</label>
-                        <input id="password" type="password" placeholder="Your Password">
-
-                        <button type="submit" class="pure-button">Sign Up</button>
-                    </fieldset>
-                </form>
-            </div>
-
-            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-                <h4>Contact Us</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                </p>
-
-                <h4>More Information</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="footer l-box is-center">
-        View the source of this layout to learn more. Made with love by the Pure Team.
-    </div>
-
-</div>
 
 </body>
 </html>
