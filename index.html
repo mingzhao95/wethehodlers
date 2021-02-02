@@ -26,7 +26,26 @@
 
   <!-- Sign-Up Form -->
   <div id="sign-up-form" class="container">
-    <form action="./form-handler.php" method="post">
+
+    <?php
+    if(isset($_POST["submit"])) {
+    echo $fname = $_POST['fname'];
+    echo $lname = $_POST['lname'];
+    echo $email = $_POST['email']; 
+    echo $assets = $_POST['assets']; 
+    echo $features = $_POST['features'];
+    echo $comment = $_POST['comment']; 
+
+     $mailBody="Name: $name\nEmail: $email\n\n$message"; 
+
+     mail($recipient, $subject, $mailBody, "From: $name <$email>");
+
+    echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
+
+    }
+    ?>
+
+    <form action="" method="post">
       <br><br>
       <label id="origin" name="origin" >( ͡° ͜ʖ ͡°) ey there, beautiful! How'd ya find us?</label>&emsp;&emsp;<select id="origin" style="width:300px">
         <option value="none" selected disabled hidden> 
@@ -73,7 +92,7 @@
       <label id="subject" style="width:100px">Any parting messages, fellow #HODLer? </label><br>
       <textarea id="comment" name="comment" placeholder="Go ahead, Siri's not listening ..." style="height:100px; width:96.5%"></textarea><br>
 
-      <input type="submit" value="Submit">
+      <input type="submit" name="submit" value="Submit">
 
     </form>
   <br><br>
